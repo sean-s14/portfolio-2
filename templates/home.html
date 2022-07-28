@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="page__container__inner center" style="padding-right: 15rem;" id="landing-section">
+        <div class="" style="font-size: 40px">
+            Hi,
+            <br>I'm <span style="font-size: 52px; font-weight: 700;">Sean</span>
+            <br>a web/app developer
+            <br><span style="font-size: 0.8rem;">Front End / Back End (Django)</span>
+            <a href="#contact-section" class="c-btn c-btn__txt center" style="margin-top: 1rem;">Contact Me</a>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="page__container__inner" id="about-section">
+        
+    </div>
+
+    <!-- Projects Section -->
+    <div class="page__container__inner center" id="projects-section">
+        <div class="project_card__container">
+            <div class="c-btn c-btn-txt project_card__header center">Websites</div>
+            <div class="project_card"></div>
+        </div>
+        <div class="project_card__container">
+            <div class="c-btn c-btn-txt project_card__header center">Mobile Apps</div>
+            <div class="project_card"></div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="page__container__inner center" id="contact-section" style="flex-direction: column;">
+        <input type="text" name="name" id="contact-name" class="c-input" placeholder="Name">
+        <input type="email" name="email" id="contact-email" class="c-input" placeholder="Email">
+        <textarea name="message" id="contact-message" cols="30" rows="10" 
+            class="c-input c-input-textarea" placeholder="Message"></textarea>
+        <input type="button" value="Send Message" class="center c-btn__txt c-input c-input-btn">
+    </div>
+
+    <!-- <div style="padding: 1rem;">
+        <h1>Home</h1>
+        <div class="btn btn-secondary">Dead Link</div>
+        <div class="text-muted">Made with Bootstrap</div>
+    </div> -->
+{% endblock content %}

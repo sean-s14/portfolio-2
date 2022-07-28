@@ -1,0 +1,22 @@
+@use '../themes/_colors' as c
+    
+.project_card
+    display: flex
+    width: 20rem
+    height: 10rem
+    box-shadow: c.$btn-box-shadow
+    border-radius: .3rem
+
+    &__container
+        display: flex
+        flex-direction: column
+        height: 15rem
+        margin-left: 1rem
+
+        &:nth-child(1n)
+            margin-right: 1rem
+
+    &__header
+        margin-bottom: 2rem
+        width: 100%
+        

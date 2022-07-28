@@ -1,0 +1,20 @@
+@use '../themes/_colors' as c
+$nav-width: 8rem
+    
+.nav
+    &__container
+        position: fixed
+        width: $nav-width
+        height: 100vh
+        box-shadow: 5px 0px 4px #8291b140
+
+    &__links
+        list-style-type: none
+        > li
+            margin-top: 1rem
+            > a
+                color: c.$base-color
+                text-decoration: none
+                transition: all .15s ease
+                &:hover
+                    font-weight: 700
